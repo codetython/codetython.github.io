@@ -1,30 +1,41 @@
-Agency Jekyll theme
-====================
+## Codetython
 
-Agency theme based on [Agency bootstrap theme ](http://startbootstrap.com/templates/agency/)
+### Como contribuir
 
-# How to use
-
-###Portfolio 
-
-Portfolio projects are in '/_posts'
-
-Images are in '/img/portfolio'
-
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
+1. [Install Jekyll](http://jekyllrb.com)
+2. Fork o [Codetython](https://github.com/codetython/codetython.github.io/fork)
+3. Clone o repositório que você forkou.
+4. Editar o `_config.yml` e adicionar suas informações iguais as que já existem.
+5. Olhe como é a estrutura de posts em `_posts`, copie e faça igual. 
+6. Leia a documentação abaixo para saber mais sobre como contribuir.
+7. **Lembre sempre de compilar os assets com Gulp.**
 
 
-# Demo
+### Criando posts.
 
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
+Quando você criar um novo post, você precisa preencher as informações do post, siga o exemplo abaixo:
 
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+```
+---
+layout: post
+title: "Como usar"
+date: 2015-10-14 03:32:44
+image: '/assets/img/'
+description: 'Sobre o post.'
+author: pablo
+tags:
+- php 
+- ruby 
+categories:
+- Rails
+twitter_text: 'Como escrever posts.'
+---
+```
+
+### Executando o blog localmente.
+
+Compile os assets dessa forma:
+
+- Instalar o [NodeJS](https://nodejs.org/)
+- Execute `npm install` 
+- Execute `gulp`

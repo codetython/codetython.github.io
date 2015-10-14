@@ -1,0 +1,14 @@
+{% assign author = site.authors[page.author] %}
+<section class="author" itemprop="author">
+    <div class="details" itemscope itemtype="http://schema.org/Person">
+        <!-- <img itemprop="image" class="img&#45;rounded" src="/assets/img/blog&#45;author.jpg" alt="{{site.name}}"> -->
+
+        <img src="http://www.gravatar.com/avatar/{{author.gravatar}}?s=150" class="img-rounded" />
+        <p class="def">Autor</p>
+        <h3 class="name">
+          {{ author.name }}
+        </h3>
+        <p class="desc">{{author.bio}}</p>
+        <a itemprop="email" class="email" href="mailto:{{author.email}}">{{author.email}}</a>
+    </div>
+</section>

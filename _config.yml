@@ -1,62 +1,70 @@
-url: https://codetython.github.io
-
 # Site settings
 title: Codetython
+description: Blog sobre desenvolvimento em geral.
+url: "http://localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 email: codetython@gmail.com
-description: "Write some description here."
+twitter_username: codetython
+github_username:  codetython
+disqus_username: codetython
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: fed136
-  secondary: fec503  
-  secondary-dark: 333
-
-# Team names, titles and social links
-people:
-- name: Pablo Fonseca
-  pic: 1
-  position: Rails Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Iago Effting
-  pic: 2
-  position: PHP Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Ralph Effting
-  pic: 3
-  position: Javascript Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/codetython
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: github
-    url: http://github.com/codetython
+authors:
+  pablo:
+    name: Pablo Fonseca
+    bio: Rails developer, vim evangelist.
+    gravatar: 9efe9c2c5c44f8280e05cb3c675c70d5
+    email: pablofonseca777@gmail.com
+    web: http://pablobfonseca.github.io
+    twitter: pablobfonseca
+    github: pablobfonseca
+    skills:
+      ruby:
+      javascript:
+  iago:
+    name: Iago Effting
+    bio: PHP Developer
+    gravatar: 174e77227e09b08c6f2c379cb856b340
+    email: iago.effting@gmail.com
+    web: http://iagoEffting.github.io
+    twitter: iagoEffting
+    github: iagoEffting
+    skills:
+      php:
+      css:
+  ralph:
+    name: Ralph Effting
+    bio: Javascript Developer
+    gravatar: 280df91e04ae8e99cfc981bb1088eb10
+    email: ralfting@gmail.com
+    web: http://ralfting.github.io
+    twitter: ralfting
+    github: ralfting
+    skills:
+      javascript:
+      css:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+highlighter: pygments
+permalink: /:title/
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Series
+    url: /series
+  - title: Categorias
+    url: /categorias
+  - title: Core Team
+    url: /core_team
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']

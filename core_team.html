@@ -1,0 +1,11 @@
+---
+layout: minimal
+title: "Core Team"
+permalink: /core_team/index.html
+description: "Sobre os autores e desenvolvedores do Codetython..."
+---
+
+{% for members in site.authors %}
+  {% assign author = members[0] %}
+  {% include _core_team.html %}
+{% endfor %}
