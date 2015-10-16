@@ -10,15 +10,19 @@ disqus_username: codetython
 authors:
   pablo:
     name: Pablo Fonseca
-    bio: Rails developer, vim evangelist.
+    bio: Desenvolvedor Rails, evangelista VIM, apaixonado por desenvolvimento web e aprendizado, procurando sempre aprender mais e compartilhar o conhecimento com todos.
     gravatar: 9efe9c2c5c44f8280e05cb3c675c70d5
     email: pablofonseca777@gmail.com
     web: http://pablobfonseca.github.io
     twitter: pablobfonseca
     github: pablobfonseca
-    skills:
+    workflow:
+      vim:
+      terminal:
       ruby:
       javascript:
+      slack:
+      mac_osx:
   iago:
     name: Iago Effting
     bio: PHP Developer
@@ -27,7 +31,7 @@ authors:
     web: http://iagoEffting.github.io
     twitter: iagoEffting
     github: iagoEffting
-    skills:
+    workflow:
       php:
       css:
   ralph:
@@ -38,7 +42,7 @@ authors:
     web: http://ralfting.github.io
     twitter: ralfting
     github: ralfting
-    skills:
+    workflow:
       javascript:
       css:
 
