@@ -1,4 +1,4 @@
-var gulp        = require('gulp'),
+var gulp      = require('gulp'),
 	plumber     = require('gulp-plumber'),
 	browserSync = require('browser-sync'),
 	stylus      = require('gulp-stylus'),
@@ -20,7 +20,7 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
 	browserSync.notify(messages.jekyllBuild);
-	return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+	return cp.spawn('jekyll', ['build', '--drafts'], {stdio: 'inherit'})
 		.on('close', done);
 });
 
