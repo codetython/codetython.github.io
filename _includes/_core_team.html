@@ -1,15 +1,17 @@
-<img itemprop="image" class="img-rounded" src="http://www.gravatar.com/avatar/{{site.authors[author].gravatar}}?s=150" alt="{{site.author[author].name}}">
+<div id="{{site.authors[author].name}}">
+  <img itemprop="image" class="img-rounded" src="http://www.gravatar.com/avatar/{{site.authors[author].gravatar}}?s=150" alt="{{site.author[author].name}}">
 
-<h3 class="author-title">{{ site.authors[author].name }}</h3>
+  <h3 class="author-title">{{ site.authors[author].name }}</h3>
 
-<h2>Sobre mim</h2>
+  <h2>Sobre mim</h2>
 
-<p>{{ site.authors[author].bio  }}</p>
+  <p>{{ site.authors[author].bio  }}</p>
 
-<h2>Skills</h2>
+  <h2>Skills</h2>
 
-<ul class="skill-list">
-  {% for wf in  site.authors[author].workflow %}</p>
-    <li>{{wf}}</li>
-  {% endfor %}
-</ul>
+  <ul class="skill-list">
+    {% for wf in  site.authors[author].workflow %}</p>
+      <li>{{wf}}</li>
+    {% endfor %}
+  </ul>
+</div>
