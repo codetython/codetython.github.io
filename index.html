@@ -12,7 +12,7 @@ layout: default
                             {{ post.date | date: "%d" }}
                         </span>
                         <span class="month-year">
-                            {{ post.date | date: "%B %Y" }}
+                            {{ post.date | localize: "%B %Y" }}
                         </span>
                     </time>
                 </a>
@@ -20,7 +20,7 @@ layout: default
                     <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ post.title }}</h2></a>
                     <p class="description">
                         {{ post.content | strip_html | truncatewords:40 }}
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="link">Leia mais {{post.title}}</a>
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="link">Leia mais sobre: {{post.title}}</a>
                     </p>
 
                     <div class="tags">
