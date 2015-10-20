@@ -8,6 +8,7 @@
 4. Editar o `_config.yml` e adicionar suas informações iguais as que já existem.
 5. Olhe como é a estrutura de posts em `_posts`, copie e faça igual. 
 6. Leia a documentação abaixo para saber mais sobre como contribuir.
+8. Artigo de como trabalhar com [upstream](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 7. **Lembre sempre de compilar os assets com Gulp.**
 
 
