@@ -34,7 +34,10 @@ authors:
     github: iagoEffting
     workflow:
       php:
-      css:
+      Laravel:
+      Zend Framework 2:
+      Git:
+      OOP:
   ralph:
     name: Ralph Effting
     bio: Javascript Developer
