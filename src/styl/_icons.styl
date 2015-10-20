@@ -21,6 +21,25 @@ size(width = 30, height = 30)
             background sec
             .icon
                 fill main
+.icons-author
+    text-align center
+    a
+        display inline-block
+        padding rem(15px)
+        margin rem(2px)
+        border-radius 50%
+        border rem(2px) solid main
+        line-height 0
+        transition all .7s
+        .icon
+            fill main
+            size(12,12)
+            +above(cut)
+                size()
+        &:hover
+            background main
+            .icon
+                fill sec
 
 .down
     position absolute

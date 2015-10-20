@@ -1,16 +1,22 @@
-{% assign author = site.authors[page.author] %}
 <section class="author" itemprop="author">
-    <div class="details" itemscope itemtype="http://schema.org/Person">
-        <!-- <img itemprop="image" class="img&#45;rounded" src="/assets/img/blog&#45;author.jpg" alt="{{site.name}}"> -->
+  <div class="details" itemscope itemtype="http://schema.org/Person">
+    <!-- <img itemprop="image" class="img&#45;rounded" src="/assets/img/blog&#45;author.jpg" alt="{{site.name}}"> -->
 
-        <img src="http://www.gravatar.com/avatar/{{author.gravatar}}?s=150" class="img-rounded" />
-        <p class="def">Autor</p>
-        <a href="{{site.url}}/core_team/#{{author.name}}" target="_blank">
-          <h3 class="name">
-            {{ author.name }}
-          </h3>
-        </a>
-        <p class="desc">{{author.bio}}</p>
-        <a itemprop="email" class="email" href="mailto:{{author.email}}">{{author.email}}</a>
+    <img src="http://www.gravatar.com/avatar/{{author.gravatar}}?s=150" class="img-rounded" />
+    <p class="def">Autor</p>
+    <a href="{{site.url}}/core_team/#{{author.name}}" target="_blank">
+      <h3 class="name">
+        {{ author.name }}
+      </h3>
+    </a>
+    <div class="teste">
+      <p class="desc">{{author.bio}}</p>
+      <div class="icons-author">
+          <a aria-label="Email" href="mailto:{{author.email}}"><svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg></a>
+          <a aria-label="Facebook" target="_blank" href="https://facebook.com/{{author.facebook}}"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+          <a aria-label="Twitter" target="_blank" href="https://twitter.com/{{author.twitter}}"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a>
+          <a aria-label="Github" target="_blank" href="https://github.com/{{author.github}}"><svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg></a>
+      </div>
     </div>
+  </div>
 </section>

@@ -32,6 +32,29 @@ twitter_text: 'Como escrever posts.'
 ---
 ```
 
+### Múltiplos contribuidores
+
+Você pode escrever um post em conjunto com mais alguém, basta ter seus dados e os dados da pessoa que está contribuindo no arquivo `_config.yml` e adicionar o seguinte nas informações do post:
+```
+---
+layout: post
+title: "Como usar"
+date: 2015-10-14 03:32:44
+image: '/assets/img/'
+description: 'Sobre o post.'
+contributors:
+- pablo
+- ralph
+- iago
+tags:
+- php 
+- ruby 
+categories:
+- Rails
+twitter_text: 'Como escrever posts.'
+---
+```
+
 ### Executando o blog localmente.
 
 Compile os assets dessa forma:

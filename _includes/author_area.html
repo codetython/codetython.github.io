@@ -1,0 +1,6 @@
+{% if page.contributors %}
+  {% include contributors.html %}
+{% else %}
+  {% assign author = site.authors[page.author] %}
+  {% include author.html %}
+{% endif %}
