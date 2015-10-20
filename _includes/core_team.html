@@ -1,0 +1,24 @@
+<div id="{{site.authors[author].name}}">
+  <img itemprop="image" class="img-rounded" src="http://www.gravatar.com/avatar/{{site.authors[author].gravatar}}?s=150" alt="{{site.author[author].name}}">
+
+  <h3 class="author-title">{{ site.authors[author].name }}</h3>
+
+  <h2>Sobre mim</h2>
+
+  <p>{{ site.authors[author].bio  }}</p>
+
+  <h2>Workflow</h2>
+  <div class="workflow-list">
+    {% assign workflow_list = site.authors[author].workflow %}
+      {% if workflow_list.first[0] == null %}
+        {% for wf in workflow_list %}
+        <span>{{wf}}</span>
+        {% endfor %}
+      {% else %}
+        {% for category in workflow_list %}
+        <span>{{ category[0] }}</span>
+        {% endfor %}
+      {% endif %}
+    {% assign workflow_list = nil %}
+  </div>
+</div>
