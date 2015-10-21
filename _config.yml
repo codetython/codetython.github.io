@@ -18,12 +18,12 @@ authors:
     twitter: pablobfonseca
     github: pablobfonseca
     workflow:
-      vim:
-      terminal:
-      ruby:
-      javascript:
-      slack:
-      mac_osx:
+      VIM:
+      Terminal:
+      Ruby:
+      JavaScript:
+      Slack:
+      MacOSX:
   iago:
     name: Iago Effting
     bio: PHP Developer
