@@ -11,7 +11,7 @@ disqus_username: codetython
 authors:
   pablo:
     name: Pablo Fonseca
-    bio: Desenvolvedor Rails, evangelista VIM, apaixonado por desenvolvimento web e aprendizado, procurando sempre aprender mais e compartilhar o conhecimento com todos.
+    bio: Desenvolvedor web, evangelista VIM, apaixonado por desenvolvimento web e aprendizado, procurando sempre aprender mais e compartilhar o conhecimento com todos.
     gravatar: 9efe9c2c5c44f8280e05cb3c675c70d5
     email: pablofonseca777@gmail.com
     web: http://pablobfonseca.github.io
@@ -19,7 +19,8 @@ authors:
     github: pablobfonseca
     workflow:
       VIM:
-      Terminal:
+      iTerm2:
+      TMUX:
       Ruby:
       JavaScript:
       Slack:
